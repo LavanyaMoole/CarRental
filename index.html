@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME car rental</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="scripts/application.js"></script>
+</head>
+<body>
+    <h1>ACME Car Rentals</h1>
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">PickUp date</label>
+        <input type="date" class="form-control" id="pickUpdate" placeholder="PickUp date">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Number of Days</label>
+        <input type="text" class="form-control" id="numberofdays" placeholder="Number of Days">
+      </div>
+
+      <p>Options</p>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="electronicTollTag">
+        <label class="form-check-label" for="flexCheckDefault">
+          Electronic Toll Tag($3.95/day)
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="GPS">
+        <label class="form-check-label" for="flexCheckChecked">
+         GPS ($2.95/day)
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="roadsideAssistance">
+        <label class="form-check-label" for="flexCheckDefault">
+         Roadside Assistance ($2.95/day)
+        </label>
+      </div>
+      <p>Under 25</p>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="no" value="option1">
+        <label class="form-check-label" for="inlineRadio1">No</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="yes" value="option2">
+        <label class="form-check-label" for="inlineRadio2">Yes</label>
+      </div>
+      <br>
+      <button type="button" class="btn btn-success" id="estimateButton">Estimate Total Cost</button>
+
+      <br>
+      <h6 class="text-center">Estimation cost</h6>
+      <br>
+      <table class="table">
+        
+        <tbody >
+          <tr id="carRental">
+           
+            <td id="carRentalDisplay">car rental:</td>
+            <td ><span id="carRentalPrice"></span></td>
+           
+          </tr>
+          <tr id="options">
+            
+            <td id="optionsDisplay">options:</td>
+            <td id="optionsPrice">xxx.xx</td>
+            
+          </tr>
+          <tr id="under25">
+            
+            <td id="under25Display">under 25:</td>
+            <td id="under25Price">xxx.xx</td>
+            
+          </tr>
+          <tr id="rentalTotal">
+            
+            <td  id="rentalTotalDisplay">Total Due:</td>
+            <td id="rentalTotalPrice">xxx.xx</td>
+          </tr>
+        </tbody>
+      </table>
+   
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
